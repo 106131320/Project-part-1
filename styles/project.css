@@ -1,0 +1,95 @@
+/*
+filename: project.css
+author: html wizards
+created: 27/8/26
+last modified: 02/9/26
+description: Global styles for the project, including layout, typography, and color scheme.
+*/
+
+/* --- Variable Declaration --- */
+:root {
+  --main-green: #00be56;
+}
+
+/* --- Base Styles --- */
+/* Universal box-sizing, font-family, and reset for margins/paddings */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* --- body Styles --- */
+
+
+body {
+  background: #ebf1e9;
+  /* Light grey-green background */
+  color: #333;
+  /* Dark grey text */
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+
+/* --- Navigation Styles --- */
+
+nav {
+  background-color: var(--main-green);
+  /* Main green background */
+  border-radius: 6px;
+  margin-bottom: 30px;
+  padding: 6px 20px 0px 0px;
+  box-shadow: 0 3px 6px rgba(0, 75, 153, 0.3);
+  /* Subtle shadow */
+}
+
+nav ul {
+  list-style: none;
+  /* Removes bullet points */
+  display: flex;
+  /* Flexbox for horizontal alignment */
+  gap: 20px;
+  /* Space between list items */
+  justify-content: center;
+  /* Centers navigation items */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  /* Smooth hover transition */
+  display: block;
+  /* Makes the entire link clickable */
+}
+
+nav ul li a:hover {
+  background-color: #129c00;
+  /* Darker green on hover */
+}
+
+
+/* --- Header --- */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  color: var(--main-green);
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #000000;
+}
