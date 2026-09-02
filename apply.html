@@ -22,21 +22,20 @@
   <a href="/about.html">About Us</a></li>
   <a href="/apply.html">Application Form</a></li>
 
-
+<h2>Application Form</h2>
   <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
-
     <fieldset>
-      <legend>Application Form </legend>
+      <legend>Applicant Information</legend>
           <!--- job reference input only allows people to type 6 alphanumeric characters  -->
 
       <label for="Job_reference_number">Job reference number:</label>
-      <input type="text" id="Job_reference_number" name="Job_reference_number" maxlength="6" pattern="[A-Za-z]{6}" placeholder="abcdef" required>
+      <input type="text" id="Job_reference_number" name="Job_reference_number"  pattern="[A-Za-z]{6}" placeholder="abcdef" required>
 
       <label for="First_name">First name:</label>
-      <input type="text" id="First_name" name="First_name" maxlength="20" pattern="[A-Za-z]{1,20}" placeholder="Jane" required>
+      <input type="text" id="First_name" name="First_name"  pattern="[A-Za-z]{1,20}" placeholder="Jane" required>
 
       <label for="Last_name">Last name:</label>
-      <input type="text" id="Last_name" name="Last_name" maxlength="20" pattern="[A-Za-z]{1,20}" placeholder="Doe" required>
+      <input type="text" id="Last_name" name="Last_name"  pattern="[A-Za-z]{1,20}" placeholder="Doe" required>
 
       <label for="Date_of_birth">Date of birth:</label>
       <input type="date" id="Date_of_birth" name="Date_of_birth" max="2026-01-01" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/\d{4}" required>
@@ -52,8 +51,20 @@
 
       <label for="other">Other</label>
       <input type="radio" name="gender" id="other" value="other" required>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Applicant Address</legend>
+
+      <label for="street-address">Street Address</label>
+      <input type="text" name="street-address" id="street-address"  pattern=".{1,40}" placeholder="123 Example Road"          required>
+
+      <label for="town">Town/Suburb</label>
+      <input type="text" name="town" id="town"  pattern=".{1,40}" placeholder="Example" required>
 
     </fieldset>
+    <input class="button" type="submit" value="Submit">
+    <input class="button" type="reset" value="Reset form">
   </form>
 
   
