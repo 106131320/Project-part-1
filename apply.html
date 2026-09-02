@@ -8,7 +8,7 @@
   <meta name="keywords" content="content goes here">
   <meta name="author" content="html wizards">
   <title>Homepage</title>
-<link rel="stylesheet" href="/styles/project.css" type="text/css">
+  <link rel="stylesheet" href="/styles/project.css" type="text/css">
 <!--- added the link to stylesheet -->
 
 </head>
@@ -17,12 +17,29 @@
 
 <!--- added links to each page -->
 
-    <a href="/">Home</a></li>
-    <a href="/jobs.html">Available Jobs</a></li>
-    <a href="/about.html">About Us</a></li>
-    <a href="/apply.html">Application Form</a></li>
+  <a href="/">Home</a></li>
+  <a href="/jobs.html">Available Jobs</a></li>
+  <a href="/about.html">About Us</a></li>
+  <a href="/apply.html">Application Form</a></li>
 
 
+  <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+
+  <fieldset>
+    <legend>Application Form </legend>
+          <!--- job reference input only allows people to type 6 alphanumeric characters  -->
+
+    <label for="Job_reference_number">Job reference number:</label>
+    <input type="text" id="Job_reference_number" name="Job_reference_number" maxlength="6" pattern="[A-Za-z]{6}" required>
+
+    <label for="First_name">First name:</label>
+    <input type="text" id="First_name" name="First_name" maxlength="20" pattern="[A-Za-z]{1,20}" required>
+
+    <label for="Last_name">Last name:</label>
+    <input type="text" id="Last_name" name="Last_name" maxlength="20" pattern="[A-Za-z]{1,20}" required>
+  </fieldset>
+
+  
 </body>
 
 
