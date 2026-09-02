@@ -25,19 +25,36 @@
 
   <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
 
-  <fieldset>
-    <legend>Application Form </legend>
+    <fieldset>
+      <legend>Application Form </legend>
           <!--- job reference input only allows people to type 6 alphanumeric characters  -->
 
-    <label for="Job_reference_number">Job reference number:</label>
-    <input type="text" id="Job_reference_number" name="Job_reference_number" maxlength="6" pattern="[A-Za-z]{6}" required>
+      <label for="Job_reference_number">Job reference number:</label>
+      <input type="text" id="Job_reference_number" name="Job_reference_number" maxlength="6" pattern="[A-Za-z]{6}" placeholder="abcdef" required>
 
-    <label for="First_name">First name:</label>
-    <input type="text" id="First_name" name="First_name" maxlength="20" pattern="[A-Za-z]{1,20}" required>
+      <label for="First_name">First name:</label>
+      <input type="text" id="First_name" name="First_name" maxlength="20" pattern="[A-Za-z]{1,20}" placeholder="Jane" required>
 
-    <label for="Last_name">Last name:</label>
-    <input type="text" id="Last_name" name="Last_name" maxlength="20" pattern="[A-Za-z]{1,20}" required>
-  </fieldset>
+      <label for="Last_name">Last name:</label>
+      <input type="text" id="Last_name" name="Last_name" maxlength="20" pattern="[A-Za-z]{1,20}" placeholder="Doe" required>
+
+      <label for="Date_of_birth">Date of birth:</label>
+      <input type="date" id="Date_of_birth" name="Date_of_birth" max="2026-01-01" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/\d{4}" required>
+  
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male" required>
+
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female" required>
+
+      <label for="non-binary">Non-Binary</label>
+      <input type="radio" name="gender" id="non-binary" value="non-binary" required>
+
+      <label for="other">Other</label>
+      <input type="radio" name="gender" id="other" value="other" required>
+
+    </fieldset>
+  </form>
 
   
 </body>
