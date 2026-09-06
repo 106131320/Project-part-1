@@ -1,0 +1,100 @@
+/*
+filename: project.css
+author: html wizards
+created: 27/8/26
+last modified: 02/9/26
+description: Global styles for the project, including layout, typography, and color scheme.
+*/
+
+/* --- Variable Declaration --- */
+:root {
+  --main-blue: #70D4FF;
+}
+
+/* --- Base Styles --- */
+/* Universal box-sizing, font-family, and reset for margins/paddings */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* --- body Styles --- */
+
+html{
+  background-color: #a9bfca;
+}
+
+body {
+  background: #dbe9f0;
+  /* Light grey-blue background */
+  color: #333;
+  /* Dark grey text */
+  line-height: 1.6;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- logo specific style --- */
+#logo {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+
+
+
+/* --- Navigation Styles --- */
+
+nav {
+  background-color: var(--main-blue);
+  padding: 6px 20px 0 0;
+  width: 100%;
+
+}
+
+nav ul {
+  list-style: none;
+  /* Removes bullet points */
+  display: flex;
+  /* Flexbox for horizontal alignment */
+  gap: 20px;
+  /* Space between list items */
+  justify-content: center;
+  /* Centers navigation items */
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 10px 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  /* Smooth hover transition */
+  display: block;
+  /* Makes the entire link clickable */
+}
+
+nav ul li a:hover {
+  background-color: #458faf;
+  /* Darker blue on hover */
+}
+
+footer {
+  margin-top: auto;
+}
