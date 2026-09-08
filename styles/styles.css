@@ -49,9 +49,13 @@ body {
   display: block;
 }
 
+ul {
+  padding-left: 40px;
+}
 
-
-
+ol {
+  padding-left: 40px;
+}
 /* --- Navigation Styles --- */
 
 nav {
