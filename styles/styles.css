@@ -1,5 +1,5 @@
 /*
-filename: project.css
+filename: styles.css
 author: html wizards
 created: 27/8/26
 last modified: 02/9/26
@@ -554,4 +554,44 @@ aside {
   background-color: #9fd7ef;
 }
 
+/*Team Member boxes for about us page*/
+.team-member {
+  border: 2px solid var(--main blue);
+  border-radius: 8px;
+  background-color: #f8fbfd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 0 20px 0;
+}
+.team-member dt {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid var(--main-blue);
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
 
+.team-member dd {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.team-member dd:last-child {
+  margin-bottom: 0;
+}
+
+.team-member dd:first-of-type {
+  font-style: italic;
+}
+
+.team-member dd em {
+  font-style: normal;
+  color: #555;
+}
+
+.team-member ul,
+.team-member ol {
+  margin-top: 5px;
+}
