@@ -395,8 +395,8 @@ section {
   padding: 1em;
 }
 
-/* --- Custom styling for details section --- */
-#details {
+/* --- Custom styling for engineer- sections and elements --- */
+#engineer-details {
   border: 3px inset var(--main-blue);
   border-radius: 4px;
   /* --- Create a border --- */
@@ -405,23 +405,113 @@ section {
 }
 
 /* --- Make requirement sections be inline with each other --- */
-#preferable-requirements, #essential-requirements {
+#engineer-preferable-requirements, #engineer-essential-requirements {
   display: inline-block;
   margin-bottom: 1em;
 }
 
-#essential-requirements {
+#engineer-essential-requirements {
   margin-right: 1em;
 }
 
-#preferable-requirements {
+#engineer-preferable-requirements {
   margin-right: 3em;
   width: 50%;
   float: right;
 }
 
-/* --- Adjust width for responsibilities --- */
-#responsibilities {
+/* --- Adjust width for responsibilities section --- */
+#engineer-responsibilities {
+  width: 100%;
+}
+
+/* --- Custom styling for architect- sections and elements --- */
+#architect-details {
+  border: 3px inset var(--main-blue);
+  border-radius: 4px;
+  /* --- Create a border --- */
+  padding: 1em;
+  width: 100%;
+}
+
+/* --- Make requirement sections be inline with each other --- */
+#architect-preferable-requirements, #architect-essential-requirements {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+#architect-essential-requirements {
+  margin-right: 1em;
+}
+
+#architect-preferable-requirements {
+  margin-right: 3em;
+  width: 50%;
+  float: right;
+}
+
+/* --- Adjust width for responsibilities section --- */
+#architect-responsibilities {
+  width: 100%;
+}
+
+/* --- Custom styling for security- sections and elements --- */
+#security-details {
+  border: 3px inset var(--main-blue);
+  border-radius: 4px;
+  /* --- Create a border --- */
+  padding: 1em;
+  width: 100%;
+}
+
+/* --- Make requirement sections be inline with each other --- */
+#security-preferable-requirements, #security-essential-requirements {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+#security-essential-requirements {
+  margin-right: 1em;
+}
+
+#security-preferable-requirements {
+  margin-right: 3em;
+  width: 50%;
+  float: right;
+}
+
+/* --- Adjust width for responsibilities section --- */
+#security-responsibilities {
+  width: 100%;
+}
+
+/* --- Custom styling for examiner- sections and elements --- */
+#examiner-details {
+  border: 3px inset var(--main-blue);
+  border-radius: 4px;
+  /* --- Create a border --- */
+  padding: 1em;
+  width: 100%;
+}
+
+/* --- Make requirement sections be inline with each other --- */
+#examiner-preferable-requirements, #examiner-essential-requirements {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+#examiner-essential-requirements {
+  margin-right: 1em;
+}
+
+#examiner-preferable-requirements {
+  margin-right: 3em;
+  width: 50%;
+  float: right;
+}
+
+/* --- Adjust width for responsibilities section --- */
+#examiner-responsibilities {
   width: 100%;
 }
 
