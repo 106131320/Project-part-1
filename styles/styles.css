@@ -637,3 +637,21 @@ aside {
 .fun-facts-table tr:nth-child(even) {
   background-color: #f0f4f7;
 }
+
+@media (max-width: 600px) {
+  .fun-facts-table {
+    width: 100%;
+  }
+
+  .fun-facts-table th,
+  .fun-facts-table td {
+    padding: 6px 8px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
