@@ -378,3 +378,63 @@ input[type="reset"]:hover {
   background-color: #5a6268;
   /* Darker grey on hover */
 }
+
+/* --- Job Page Styling --- */
+/* --- Prevents horizontal line from wrapping both sides of floated elements --- */
+hr {
+  clear: both;
+}
+
+h2 {
+  padding: 0.35em;
+}
+
+/* --- Custom styling for sections --- */
+section {
+  width: 40%;
+  padding: 1em;
+}
+
+/* --- Custom styling for details section --- */
+#details {
+  border: 3px inset var(--main-blue);
+  border-radius: 4px;
+  /* --- Create a border --- */
+  padding: 1em;
+  width: 100%;
+}
+
+/* --- Make requirement sections be inline with each other --- */
+#preferable-requirements, #essential-requirements {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+#essential-requirements {
+  margin-right: 1em;
+}
+
+#preferable-requirements {
+  margin-right: 3em;
+  width: 50%;
+  float: right;
+}
+
+/* --- Adjust width for responsibilities --- */
+#responsibilities {
+  width: 100%;
+}
+
+/* --- Make aside sections and description sections inline --- */
+aside, #engineer-description, #architect-description, #security-description, #examiner-description {
+  display: inline-block;
+}
+
+/* --- Custom styling for aside elements --- */
+aside {
+  margin: 1em;
+  margin-right: 2em;
+  width: 50%;
+  float: right;
+}
+
