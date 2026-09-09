@@ -27,9 +27,20 @@ html{
   background-color: #a9bfca;
 }
 
+
 body {
-  background: #dbe9f0;
-  /* Light grey-blue background */
+  background-color: #dbe9f0;
+
+  background-image:
+    url("/images/backcircuits.png"),
+    url("/images/backcircuits.png");
+  background-repeat:
+    repeat-y,
+    repeat-y;
+  background-position:
+    left top,
+    right top;
+
   color: #333;
   /* Dark grey text */
   line-height: 1.6;
@@ -44,10 +55,10 @@ body {
 
 /* --- logo specific style --- */
 #logo {
-  width: 150px;
+  width: 100px;
   height: auto;
   display: block;
-}
+  padding-bottom: 5px;}
 
 ul {
   padding-left: 40px;
@@ -92,6 +103,7 @@ nav ul li a {
   /* Smooth hover transition */
   display: block;
   /* Makes the entire link clickable */
+
 }
 
 nav ul li a:hover {
@@ -101,4 +113,268 @@ nav ul li a:hover {
 
 footer {
   margin-top: auto;
+}
+
+.main {
+  width: 80%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f4f7;
+  /* Light grey-blue background */
+  border-left: 6px solid var(--main-blue);
+  border-right: 6px solid var(--main-blue);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+ 
+  flex: 1;
+
+}
+
+
+/* --- Form Styling --- */
+
+.application_body {
+  width: 80%;
+  max-width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f0f4f7;
+  /* Light grey-blue background */
+  border-left: 6px solid var(--main-blue);
+  border-right: 6px solid var(--main-blue);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* Space between fieldsets and buttons */
+}
+
+fieldset {
+  border: 2px solid var(--main-blue);
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f8fbfd;
+  /* Very light blue background */
+  display: flex;
+  /* Flex container for internal alignment */
+  flex-direction: column;
+  /* Stacks contents vertically */
+  gap: 15px;
+  /* Space between direct children of the fieldset */
+}
+
+legend {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--main-blue);
+  padding: 0 10px;
+  margin-left: -10px;
+  /* Pulls legend slightly to the left over the border */
+}
+
+/* Labels within the applicant information fieldset */
+.applicant-info-fieldset label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: -5px;
+  /* Pulls label closer to the input */
+  display: block;
+  /* Ensures full width for consistency */
+}
+
+/* Styling for selectable input fields (text, email, select) */
+.selectable {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth hover/focus transition */
+}
+
+.selectable:hover {
+  border-color: var(--main-blue);
+  box-shadow: 0 0 0 3px rgba(0, 75, 153, 0.2);
+  /* Light blue shadow on hover */
+  outline: none;
+  /* Removes default outline */
+}
+
+/* Custom styling for select dropdowns */
+select {
+  appearance: none;
+  /* Removes default OS styling */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  padding-right: 30px;
+  /* Space for a custom dropdown arrow if desired */
+}
+
+/* Gender Fieldset specific styling */
+.gender-fieldset {
+  flex-direction: row;
+  /* Arranges radio buttons horizontally */
+  flex-wrap: wrap;
+  /* Allows items to wrap on smaller screens */
+  gap: 20px;
+  border: 1px solid #ccc;
+  /* Lighter border */
+  background-color: #f0f4f7;
+  /* Even lighter background */
+  padding: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.gender-fieldset legend {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
+  margin-left: -5px;
+  padding: 0 5px;
+}
+
+/* Styling for individual radio button labels within the gender fieldset */
+.gender-fieldset label {
+  display: flex;
+  align-items: center;
+  /* Vertically centers radio button and text */
+  font-weight: normal;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.gender-fieldset input[type="radio"] {
+  margin-right: 8px;
+  /* Space between radio button and its label text */
+  flex-shrink: 0;
+  /* Prevents radio button from shrinking */
+}
+
+/* Textarea resizing behavior */
+form textarea {
+  resize: vertical;
+  /* Allows vertical resizing only */
+}
+
+/* Grouping for standard skill checkboxes */
+.skill-group-standard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: -12px;
+  /* Adjusts spacing if followed by other elements */
+}
+
+.skill-group-standard label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.skill-group-standard input[type="checkbox"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Styling for the "Other Skills" checkbox and associated text area */
+.other-skills-control {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+  margin-bottom: 15px;
+  align-items: center;
+  /* Vertically centers checkbox with label */
+}
+
+.other-skills-control label[for="other-skills"] {
+  color: #333;
+  cursor: pointer;
+  margin-top: -3px;
+  margin-left: 4px;
+  margin-right: 10px;
+}
+
+.other-skills-control input[type="checkbox"] {
+  margin-right: -5px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Hidden textarea for "Other Skills" - initially hidden */
+#hidden {
+  max-height: 0;
+  opacity: 0;
+  /* Smooth transition for revealing the textarea */
+  transition:
+    max-height 0.5s ease-out,
+    opacity 0.5s ease-out,
+    padding 0.5s ease-out;
+  width: 100%;
+  overflow: hidden;
+  /* Ensures content is clipped when hidden */
+}
+
+/* Shows the hidden textarea when the "Other Skills" checkbox is checked */
+.other-skills-control input#other-skills:checked~#hidden {
+  max-height: 200px;
+  /* Allows the textarea to expand */
+  opacity: 1;
+}
+
+#hidden textarea {
+  width: 100%;
+}
+
+/* Submit and Reset Buttons */
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  background-color: var(--main-blue);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth hover effects */
+  margin-top: 10px;
+  align-self: flex-start;
+  /* Aligns button to the left within flex container */
+}
+
+.button:hover {
+  background-color: #003366;
+  /* Darker blue on hover */
+  transform: translateY(-2px);
+  /* Slight lift effect */
+}
+
+input[type="reset"] {
+  background-color: #6c757d;
+  /* Grey for reset button */
+}
+
+input[type="reset"]:hover {
+  background-color: #5a6268;
+  /* Darker grey on hover */
 }
