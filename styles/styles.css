@@ -88,6 +88,7 @@ body {
   background-size: contain;
 }
 
+
 ul {
   padding-left: 40px;
 }
@@ -99,7 +100,7 @@ ol {
 
 nav {
   background-color: var(--main-purple);
-  padding: 6px 20px 0 0;
+  padding: 0px 20px 0 0;
   width: 100%;
 
 }
@@ -113,6 +114,7 @@ nav ul {
   /* Space between list items */
   justify-content: center;
   /* Centers navigation items */
+
 }
 
 nav ul li {
@@ -139,8 +141,44 @@ nav ul li a:hover {
   /* Darker purple  on hover */
 }
 
+nav ul li:first-child a:hover {
+  background-color: transparent;
+}
+
 footer {
+  background-color: var(--main-purple);
+  padding: 6px;
+  width: 100%;
   margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+}
+
+
+footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 5px 5px;
+  margin: 5px;
+  margin-left: 45px;
+  border-radius: 4px;
+  background-color: var(--main-purple);
+  transition: 0.3s ease;
+}
+
+footer a:hover {
+  background-color: #7a7ccf;
+}
+
+footer p:last-child {
+  position: absolute;
+  right: 40px;
 }
 
 .main {
@@ -154,6 +192,7 @@ footer {
   border-right: 4px solid var(--main-purple);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Subtle shadow for depth */
+
  
   flex: 1;
 
@@ -409,6 +448,35 @@ input[type="reset"]:hover {
 
 /* --- Job Page Styling --- */
 /* --- Prevents horizontal line from wrapping both sides of floated elements --- */
+
+
+.job_description {
+  width: calc(100% + 40px);
+  margin: 15px -20px 0;
+  padding: 20px;
+  background-color: #f8fbfd;
+  /* Light grey-blue background */
+  border-top: 3px solid var(--main-purple);
+  border-bottom: 3px solid var(--main-purple);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Subtle shadow for depth */ 
+}
+
+.last_job_description {
+  width: calc(100% + 40px);
+  margin: 15px -20px -20px;
+  padding: 20px;
+  background-color: #f8fbfd;
+  /* Light grey-blue background */
+  border-top: 3px solid var(--main-purple);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Subtle shadow for depth */ 
+}
+
 hr {
   clear: both;
 }
@@ -574,12 +642,12 @@ aside {
   margin: 15px;
   margin-left: 45px;
   border-radius: 4px;
-  background-color: #e3e1e1;
+  background-color: var(--main-purple);
   transition: 0.3s ease;
 }
 
 .menu a:hover {
-  background-color: #9fd7ef;
+  background-color: #7a7ccf;
 }
 
 /*Team Member boxes for about us page*/
@@ -599,6 +667,8 @@ aside {
   border: 2px solid var(--main-purple);
   border-radius: 8px;
   background-color: #f8fbfd;
+  background: url(/images/fade.png) repeat-x top;
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 0;
