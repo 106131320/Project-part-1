@@ -722,6 +722,23 @@ aside {
   margin-top: 5px;
 }
 
+/*Group Photo (about.html)*/
+.group-photo {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.group-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.group-photo figcaption {
+  margin-top: 10px;
+  color: #555;
+}
+
 /*Team Fun Facts Table (about.html)*/
 .fun-facts-table {
   border-collapse: collapse;
