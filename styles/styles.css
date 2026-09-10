@@ -150,8 +150,8 @@ footer {
   padding: 20px;
   background-color: #f0f4f7;
   /* Light grey-blue background */
-  border-left: 6px solid var(--main-blue);
-  border-right: 6px solid var(--main-blue);
+  border-left: 4px solid var(--main-blue);
+  border-right: 4px solid var(--main-blue);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Subtle shadow for depth */
  
