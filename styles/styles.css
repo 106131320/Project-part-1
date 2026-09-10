@@ -769,3 +769,75 @@ aside {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
+/* --- Index Page Styling --- */
+/*CyberSnug Services Table (index.html)*/
+.services-table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #f8fbfd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services-table th.services-header {
+  background-color: var(--main-purple);
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 12px 16px;
+}
+
+.services-table caption {
+  font-size: 1.3em;
+  padding-bottom: 12px;
+}
+
+.services-table th,
+.services-table td {
+  border: 1px solid var(--main-purple);
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.services-table th {
+  background-color: var(--main-purple);
+  color: white;
+}
+
+.services-table tr:nth-child(even) {
+  background-color: #f0f4f7;
+}
+
+@media (max-width: 600px) {
+  .services-table {
+    width: 100%;
+  }
+
+  .services-table th,
+  .services-table td {
+    padding: 6px 8px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Checkmark --- */
+.checkmark-symbol::before {
+  content: "✔";
+  color: green;
+}
+
+
+
+.acknowledgment-of-land {
+  text-align: center;
+}
