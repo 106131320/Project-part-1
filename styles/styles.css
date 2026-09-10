@@ -199,6 +199,8 @@ footer p:last-child {
 }
 
 
+
+
 /* --- Form Styling --- */
 
 .application_body {
@@ -210,7 +212,6 @@ footer p:last-child {
   /* Light grey-blue background */
   border-left: 6px solid var(--main-purple);
   border-right: 6px solid var(--main-purple);
-  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Subtle shadow for depth */
 }
@@ -294,7 +295,7 @@ select {
   gap: 20px;
   border: 1px solid #ccc;
   /* Lighter border */
-  background-color: #f0f4f7;
+  background-color: #FFFFFF;
   /* Even lighter background */
   padding: 15px;
   margin-top: 5px;
@@ -449,29 +450,45 @@ input[type="reset"]:hover {
 /* --- Job Page Styling --- */
 /* --- Prevents horizontal line from wrapping both sides of floated elements --- */
 
+.jobs_main {
+  width: 80%;
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #d3d3dd;
+
+
+ 
+  flex: 1;
+
+}
 
 .job_description {
-  width: calc(100% + 40px);
-  margin: 15px -20px 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 10px auto;
   padding: 20px;
-  background-color: #f8fbfd;
+  background-color: #efeff7;
   /* Light grey-blue background */
-  border-top: 3px solid var(--main-purple);
-  border-bottom: 3px solid var(--main-purple);
+  border: 3px solid var(--main-purple);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   /* Subtle shadow for depth */ 
 }
 
-.last_job_description {
-  width: calc(100% + 40px);
-  margin: 15px -20px -20px;
+
+
+
+.available_jobs {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   padding: 20px;
-  background-color: #f8fbfd;
+  background-color: #efeff7;
   /* Light grey-blue background */
-  border-top: 3px solid var(--main-purple);
-  border-radius: 8px;
+  border: 3px solid var(--main-purple);
+  border-top: 0px solid var(--main-purple);
+  border-radius: 0 0 8px 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   /* Subtle shadow for depth */ 
@@ -630,17 +647,16 @@ aside {
 
 /* --- Styling for menu --- */
 .menu {
-  display: inline-block;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .menu a {
   color: black;
   font-weight: bold;
   text-decoration: none;
-  display: block;
-  padding: 10px 10px;
-  margin: 15px;
-  margin-left: 45px;
+  padding: 10px 20px;
   border-radius: 4px;
   background-color: var(--main-purple);
   transition: 0.3s ease;
