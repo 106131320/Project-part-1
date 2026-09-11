@@ -495,9 +495,6 @@ input[type="reset"]:hover {
   /* Subtle shadow for depth */ 
 }
 
-hr {
-  clear: both;
-}
 
 h1 {
   padding: 0.3em;
