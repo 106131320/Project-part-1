@@ -241,7 +241,7 @@ fieldset {
 legend {
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--main-purple);
+  color: black;
   padding: 0 10px;
   margin-left: -10px;
   /* Pulls legend slightly to the left over the border */
@@ -417,7 +417,7 @@ form textarea {
 }
 
 .button {
-  background-color: var(--main-purple);
+  background-color: black;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -800,14 +800,12 @@ aside {
 
 .title h3 {
   font-size: 2rem;
-  color: var(--main-purple);
   padding: 0;
   margin: 0;
 }
 
 .title h1 {
   font-size: 3rem;
-  color: #8e8fce;
   padding: 0;
   margin: 0;
 }
@@ -818,6 +816,8 @@ aside {
   justify-content: space-between;
   gap: 2em;
   width: 100%;
+
+
 }
 
 .left-content {
