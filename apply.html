@@ -8,9 +8,18 @@
   <meta name="keywords" content="content goes here">
   <meta name="author" content="html wizards">
   <title>Homepage</title>
-  <link rel="stylesheet" href="/styles/project.css" type="text/css">
+  <link rel="stylesheet" href="/styles/styles.css" type="text/css">
 <!--- added the link to stylesheet -->
 
+<!--- embedded css -->
+  <style>
+  legend {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: black;
+    padding: 0 10px;
+  }
+  </style>
 </head>
 
 <body>
@@ -142,8 +151,8 @@
         </div>
       </div>
     </fieldset>
-    <div class="buttons">
-      <input class="button" type="submit" value="Submit">
+    <div class="buttons"> <!--- Inline CSS for button text color -->
+      <input class="button" type="submit" value="Submit" style="color: #AEAFFF">
       <input class="button" type="reset" value="Reset form">
     </div>
     </form>

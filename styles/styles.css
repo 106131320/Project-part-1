@@ -31,6 +31,7 @@ html{
 body {
   background-color: #d3d3dd;
 
+  /* places background images to the left and right repeated vertically*/
   background-image:
     url("/images/backcircuits.png"),
     url("/images/backcircuits.png");
@@ -48,7 +49,6 @@ body {
   margin: 0 auto;
   padding: 0px;
 
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -88,7 +88,7 @@ body {
   background-size: contain;
 }
 
-
+  /* universal box sizing is 0 padding, lists cant give a number or symbol when theres 0 padding */
 ul {
   padding-left: 40px;
 }
@@ -202,7 +202,9 @@ footer p:last-child {
 
 
 
-/* --- Form Styling --- */
+/* --- apply.html Styling --- */
+
+
 
 .application_body {
   width: 80%;
@@ -229,7 +231,6 @@ fieldset {
   border-radius: 8px;
   padding: 20px;
   background-color: #f8fbfd;
-  /* Very light blue background */
   display: flex;
   /* Flex container for internal alignment */
   flex-direction: column;
@@ -238,14 +239,7 @@ fieldset {
   /* Space between direct children of the fieldset */
 }
 
-legend {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: black;
-  padding: 0 10px;
-  margin-left: -10px;
-  /* Pulls legend slightly to the left over the border */
-}
+
 
 /* Labels within the applicant information fieldset */
 .applicant-info-fieldset label {
@@ -418,7 +412,6 @@ form textarea {
 
 .button {
   background-color: black;
-  color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
@@ -432,7 +425,7 @@ form textarea {
 }
 
 .button:hover {
-  background-color: #003366;
+  background-color: #5d5e86;
   /* Darker blue on hover */
   transform: translateY(-2px);
   /* Slight lift effect */
@@ -449,18 +442,13 @@ input[type="reset"]:hover {
 }
 
 /* --- Job Page Styling --- */
-/* --- Prevents horizontal line from wrapping both sides of floated elements --- */
 
 .jobs_main {
   width: 80%;
   max-width: 80%;
   margin: 0 auto;
   background-color: #d3d3dd;
-
-
- 
   flex: 1;
-
 }
 
 .job_description {
@@ -473,7 +461,6 @@ input[type="reset"]:hover {
   border: 3px solid var(--main-purple);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
   /* Subtle shadow for depth */ 
 }
 
@@ -828,7 +815,6 @@ aside {
 
 .company-description {
   width: 100%;
-  font-size: 1.5rem;
   margin: 10px 0 0;
   padding: 0;
   float: none;
