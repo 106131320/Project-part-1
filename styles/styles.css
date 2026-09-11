@@ -33,8 +33,8 @@ body {
 
   /* places background images to the left and right repeated vertically*/
   background-image:
-    url("/images/backcircuits.png"),
-    url("/images/backcircuits.png");
+    url("../images/backcircuits.png"),
+    url("../images/backcircuits.png");
   background-repeat:
     repeat-y,
     repeat-y;
@@ -176,10 +176,7 @@ footer a:hover {
   background-color: #7a7ccf;
 }
 
-footer p:last-child {
-  position: absolute;
-  right: 40px;
-}
+
 
 .main {
   width: 80%;
@@ -668,7 +665,7 @@ aside {
   border: 2px solid var(--main-purple);
   border-radius: 8px;
   background-color: #f8fbfd;
-  background: url(/images/fade.png) repeat-x top;
+  background: url(./images/fade.png) repeat-x top;
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -782,17 +779,7 @@ aside {
   padding: 0;
 }
 
-.title h3 {
-  font-size: 2rem;
-  padding: 0;
-  margin: 0;
-}
 
-.title h1 {
-  font-size: 3rem;
-  padding: 0;
-  margin: 0;
-}
 
 .content-row {
   display: flex;
@@ -800,7 +787,7 @@ aside {
   justify-content: space-between;
   gap: 2em;
   width: 100%;
-
+  font-size: 1.5em;
 
 }
 
