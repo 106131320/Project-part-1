@@ -123,7 +123,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.5rem;
@@ -160,7 +160,7 @@ footer {
 
 
 footer a {
-  color: white;
+  color: black;
   font-weight: bold;
   text-decoration: none;
   display: block;
@@ -763,7 +763,7 @@ aside {
 
 .fun-facts-table th {
   background-color: var(--main-purple);
-  color: white;
+  color: black;
 }
 
 .fun-facts-table tr:nth-child(even) {
@@ -856,7 +856,7 @@ aside {
 
 .services-table th.services-header {
   background-color: var(--main-purple);
-  color: white;
+  color: black;
   text-align: center;
   font-size: 1.5em;
   padding: 12px 16px;
@@ -876,7 +876,7 @@ aside {
 
 .services-table th {
   background-color: var(--main-purple);
-  color: white;
+  color: black;
 }
 
 .services-table tr:nth-child(even) {
