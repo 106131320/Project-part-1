@@ -33,8 +33,8 @@ body {
 
   /* places background images to the left and right repeated vertically*/
   background-image:
-    url("/images/backcircuits.png"),
-    url("/images/backcircuits.png");
+    url("./images/backcircuits.png"),
+    url("./images/backcircuits.png");
   background-repeat:
     repeat-y,
     repeat-y;
@@ -665,7 +665,7 @@ aside {
   border: 2px solid var(--main-purple);
   border-radius: 8px;
   background-color: #f8fbfd;
-  background: url(/images/fade.png) repeat-x top;
+  background: url(./images/fade.png) repeat-x top;
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
