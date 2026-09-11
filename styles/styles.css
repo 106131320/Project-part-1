@@ -408,7 +408,7 @@ form textarea {
 }
 
 .button {
-  background-color: #AEAFFF;
+  background-color: grey;
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
@@ -429,12 +429,12 @@ form textarea {
 }
 
 input[type="reset"] {
-  background-color: #d3ded3;
+  background-color: grey;
   /* Grey for reset button */
 }
 
 input[type="reset"]:hover {
-  background-color: #5a6268;
+  background-color: #5d5e86;
   /* Darker grey on hover */
 }
 
@@ -620,13 +620,14 @@ aside, #engineer-description, #architect-description, #security-description, #ex
 }
 
 /* --- Custom styling for aside elements --- */
-aside {
-  margin: 1em;
-  margin-right: 2em;
-  width: 50%;
-  float: right;
-}
 
+.jobs_aside {
+  width: 100%;
+  border: 3px inset var(--main-purple);
+  border-radius: 4px;
+  margin-top: 1em;
+  padding: 1em;
+}
 /* --- Styling for menu --- */
 .menu {
   display: flex;
