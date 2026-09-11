@@ -792,6 +792,29 @@ aside {
 
 /* --- Index Page Styling --- */
 /*CyberSnug Services Table (index.html)*/
+.visual-slogan {
+  text-align: right;
+  margin: 20px auto;
+  max-width: 30%;
+  height: auto;
+  border: 3px solid var(--main-purple);
+  border-radius: 4px;
+  padding: 0em;
+  width: 100%;
+}
+
+.company-description {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 70%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  border-radius: 2px;
+  padding: 4em;
+  width: 100%;
+}
+
+
 .services-table {
   border-collapse: collapse;
   width: 80%;
