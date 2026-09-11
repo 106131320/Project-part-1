@@ -408,7 +408,7 @@ form textarea {
 }
 
 .button {
-  background-color: black;
+  background-color: grey;
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
@@ -429,12 +429,12 @@ form textarea {
 }
 
 input[type="reset"] {
-  background-color: #6c757d;
+  background-color: grey;
   /* Grey for reset button */
 }
 
 input[type="reset"]:hover {
-  background-color: #5a6268;
+  background-color: #5d5e86;
   /* Darker grey on hover */
 }
 
