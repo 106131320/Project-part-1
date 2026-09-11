@@ -12,6 +12,7 @@
 <!--- added the link to stylesheet -->
 
 <!--- embedded css -->
+<!--style the fieldset legends-->
   <style>
   legend {
     font-size: 1.4rem;
@@ -26,6 +27,7 @@
 
   <header>
   <!--- added links to each page -->
+  <!--main site nav, including logo with lightbox popup-->
   <nav>
     <ul>
       <li>
@@ -41,6 +43,7 @@
   </nav>
   </header>
 
+  <!--Hidden lightbox that displays enlarged version of logo when nav logo link is clicked-->
   <div class="lightbox" id="logo-lightbox">
     <a href="#" aria-label="Close">
       <span style="background-image: url('images/Cyber_Snug_FINAL.png');"></span>
@@ -50,6 +53,7 @@
 <main class="application_body">
 
   <h1>Application Form</h1>
+  <!--submits via POST to swinburne endpoint-->
     <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
       <fieldset class="applicant-info-fieldset">
         <legend>Applicant Information</legend>
@@ -59,15 +63,17 @@
         <input class="selectable" type="text" id="Job_reference_number" name="Job_reference_number"  pattern=".{6}" placeholder="abc123" required>
 
        <label for="First_name">First name:</label>
+       <!--Letters only, up to 20 characters-->
         <input class="selectable" type="text" id="First_name" name="First_name"  pattern="[A-Za-z]{1,20}" placeholder="Jane" required>
-
+        
         <label for="Last_name">Last name:</label>
         <input class="selectable" type="text" id="Last_name" name="Last_name"  pattern="[A-Za-z]{1,20}" placeholder="Doe" required>
 
        <label for="Date_of_birth">Date of birth:</label>
+       <!--restricts data picker so no date after Jan 1st 2026 can be chosen-->
        <input class="selectable" type="date" id="Date_of_birth" name="Date_of_birth" max="2026-01-01" required>
   
-
+      <!--gender roles, radio group-->
       <fieldset class="gender-fieldset">
         <legend>Gender</legend>
        <label for="male">Male</label>
@@ -83,7 +89,7 @@
        <input type="radio" name="gender" id="other" value="other" required>
     </fieldset>
     
-
+      <!--address fields: street, town/suburb, state dropdown, postcode-->
       <label for="street-address">Street Address</label>
       <input class="selectable" type="text" name="street-address" id="street-address" pattern=".{1,40}" placeholder="123 Example Road" required="">
 
@@ -109,6 +115,7 @@
 
     </fieldset>
 
+    <!--contact details, email and phone number-->
     <fieldset>
       <legend>Applicant Contact Information</legend>
 
@@ -116,9 +123,11 @@
       <input class="selectable" type="email" id="email" name="email" placeholder="example@email.com" required="">
     
       <label for="phone">Phone:</label>
+      <!--Must be exactly 10 digits-->
       <input class="selectable" type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0412345678" required="">
     </fieldset>
-  
+
+<!--skills section, set of checkboxes and optional "other skills" text area-->
 <fieldset>
       <legend>Applicant Skills</legend>
 
@@ -138,6 +147,7 @@
        </label>
       </div>
 
+      <!--checking "other skills" reveal text area for applicant to describe additional skills-->
       <div class="other-skills-control">
         <input type="checkbox" name="other-skills" id="other-skills">
         <label for="other-skills">Other Skills</label>
@@ -158,8 +168,8 @@
     </form>
 </main>
 
+  <!--Site footer with links Github repo, Jira Board and contact email-->
   <footer>
-<!---check if links work before submitting-->
     <p ><a href="https://github.com/106131320/Project-part-1" target="_blank">Cyber Snug's Github Page!</a></p>
     <p ><a href="https://snugcyber.atlassian.net?continue=https%3A%2F%2Fsnugcyber.atlassian.net%2Fwelcome%2Fsoftware&atlOrigin=eyJpIjoiZGUwYWVmOGFkY2FlNDNkOGJjMmJmNWQ0NGI5NGQwYzEiLCJwIjoiaiJ9" 
     target="_blank">Cyber Snug's Jira portfolio </a></p>
