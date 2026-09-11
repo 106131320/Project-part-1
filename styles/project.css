@@ -191,6 +191,7 @@ footer p:last-child {
   border-left: 4px solid var(--main-purple);
   border-right: 4px solid var(--main-purple);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
   /* Subtle shadow for depth */
 
  
@@ -240,7 +241,7 @@ fieldset {
 legend {
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--main-purple);
+  color: black;
   padding: 0 10px;
   margin-left: -10px;
   /* Pulls legend slightly to the left over the border */
@@ -416,7 +417,7 @@ form textarea {
 }
 
 .button {
-  background-color: var(--main-purple);
+  background-color: black;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -494,9 +495,6 @@ input[type="reset"]:hover {
   /* Subtle shadow for depth */ 
 }
 
-hr {
-  clear: both;
-}
 
 h1 {
   padding: 0.3em;
@@ -792,33 +790,63 @@ aside {
 
 /* --- Index Page Styling --- */
 /*CyberSnug Services Table (index.html)*/
-.visual-slogan {
-  text-align: right;
-  margin: 20px auto;
-  max-width: 30%;
-  height: auto;
-  border: 3px solid var(--main-purple);
-  border-radius: 4px;
-  padding: 0em;
+
+.title {
+  padding: 0;
+}
+
+.title h3 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.title h1 {
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.content-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2em;
   width: 100%;
+
+
+}
+
+.left-content {
+  flex: 1;
+  min-width: 0;
+  padding: 3em 1em 1em 1em;
 }
 
 .company-description {
-  text-align: center;
-  margin: 20px auto;
-  max-width: 70%;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  border-radius: 2px;
-  padding: 4em;
   width: 100%;
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+  padding: 0;
+  float: none;
 }
 
+.company-description p + p {
+  margin-top: 20px;
+}
+
+#visual-slogan {
+  width: 42%;
+  height: auto;
+  flex-shrink: 0;
+  margin-top: -20px;
+  margin-right: -20px;
+}
 
 .services-table {
   border-collapse: collapse;
   width: 80%;
-  margin: 20px auto;
+  margin: 6em auto;
   background-color: #f8fbfd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

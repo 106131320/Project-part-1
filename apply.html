@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--- need to fill in meta elements -->
+<!--- meta elements -->
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="content goes here">
-  <meta name="keywords" content="content goes here">
+  <meta name="description" content="Application form for Cyber Snug">
+  <meta name="keywords" content="Cyber Snug, application form, application, apply">
   <meta name="author" content="html wizards">
-  <title>Homepage</title>
-  <link rel="stylesheet" href="/styles/styles.css" type="text/css">
+  <title>Application Form</title>
+  <link rel="stylesheet" href="/styles/project.css" type="text/css">
 <!--- added the link to stylesheet -->
 
 </head>
@@ -56,7 +56,7 @@
         <input class="selectable" type="text" id="Last_name" name="Last_name"  pattern="[A-Za-z]{1,20}" placeholder="Doe" required>
 
        <label for="Date_of_birth">Date of birth:</label>
-       <input class="selectable" type="date" id="Date_of_birth" name="Date_of_birth" max="2026-01-01" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[012])/\d{4}" required>
+       <input class="selectable" type="date" id="Date_of_birth" name="Date_of_birth" max="2026-01-01" required>
   
 
       <fieldset class="gender-fieldset">
@@ -84,6 +84,7 @@
   
      <label for="state">State:</label>
       <select class="selectable" id="state" name="state" required>
+        <option value="">Please Select a state</option>
         <option value="VIC">VIC</option>
         <option value="NSW">NSW</option>
         <option value="QLD">QLD</option>
@@ -115,21 +116,21 @@
       <div class="skill-group-standard">
 
         <label for="skill1">
-         <input type="checkbox" name="communication"> Communication
+         <input type="checkbox" name="communication" id="skill1" > Communication
         </label>
         <label for="skill2">
-          <input type="checkbox" name="teamwork"> Teamwork
+          <input type="checkbox" name="teamwork" id="skill2" > Teamwork
         </label>
         <label for="skill3">
-          <input type="checkbox" name="problem-solving"> Problem Solving
+          <input type="checkbox" name="problem-solving" id="skill3" > Problem Solving
        </label>
         <label for="skill4">
-          <input type="checkbox" name="adaptability"> Adaptability
+          <input type="checkbox" name="adaptability" id="skill4" > Adaptability
        </label>
       </div>
 
       <div class="other-skills-control">
-        <input type="checkbox" name="other-skills" id="other-skills" />
+        <input type="checkbox" name="other-skills" id="other-skills">
         <label for="other-skills">Other Skills</label>
         <div id="hidden">
           <label for="other-skills-long">What are your other skills?</label>
@@ -146,7 +147,7 @@
       <input class="button" type="reset" value="Reset form">
     </div>
     </form>
-</main class="application_body">
+</main>
 
   <footer>
 <!---check if links work before submitting-->
