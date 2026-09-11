@@ -411,7 +411,7 @@ form textarea {
 }
 
 .button {
-  background-color: black;
+  background-color: #AEAFFF;
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
@@ -432,7 +432,7 @@ form textarea {
 }
 
 input[type="reset"] {
-  background-color: #6c757d;
+  background-color: #d3ded3;
   /* Grey for reset button */
 }
 
